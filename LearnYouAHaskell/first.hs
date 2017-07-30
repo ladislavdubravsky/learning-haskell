@@ -69,7 +69,7 @@ giveMeAnyType x = x
 -- Floating
 
 -- define function on Integral types
-sayMe :: (Integral a) => a -> String  -- without typespec error, we need at least (Eq a, Num a)
+sayMe :: (Integral a) => a -> String  -- without typespec gives error, we need at least (Eq a, Num a)
 sayMe 1 = "One!"  
 sayMe 2 = "Two!"  
 sayMe 3 = "Three!"   
@@ -119,7 +119,7 @@ descrNum n
     | n < 0     = "Negative"
     | n == 0    = "Zero"
     | otherwise = "Maybe positive?"
--- :t descrNum gets us descrNum :: (Ord a, Num a) => a -> [Char]
+-- :t descrNum gets us type descrNum :: (Ord a, Num a) => a -> [Char]
 
 -- where
 descrShiftedNum :: (Ord a, Num a) => a -> [Char]
@@ -129,12 +129,12 @@ descrShiftedNum n
     | otherwise = "Maybe positive?"
     where s = n - 7
 
--- let <bindings> in <expression : very local bindings
+-- let <bindings> in <expression>: very local bindings
 
 -- tuples: based on length and item types each is its own type:
 -- (2, "a") :: Num t => (t, [Char])
 
--- great algebraic style
+-- great algebraic style for definitions
 take' :: (Num i, Ord i) => i -> [a] -> [a]  
 take' n _  
     | n <= 0   = []  
