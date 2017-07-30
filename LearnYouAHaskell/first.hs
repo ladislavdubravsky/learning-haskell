@@ -37,7 +37,7 @@ str = "string" -- String is list of chars [Char]
 -- head tail, last init
 -- null take reverse
 -- maximum, minimum, sum, product
--- 4 `elem` [3, 4] membership test, elem 4 [3, 4] to avoid the stupid infix symbol
+-- 4 `elem` [3, 4] membership test, elem 4 [3, 4] to avoid the infix symbol
 
 -- take 10 (cycle [1, 2, 3])
 
