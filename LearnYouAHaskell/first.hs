@@ -106,7 +106,7 @@ someRepr (x:[]) = "1-element: " ++ show x
 someRepr (x:xs) = "Many elements, first: " ++ show x
 -- someRepr [[1,2],[3,4]]
 
--- sum of list - no loops, use recursion
+-- sum of list - no loops, use pattern matching + recursion
 mySum :: (Num a) => [a] -> a
 mySum [] = 0
 mySum (x:xs) = x + mySum xs
