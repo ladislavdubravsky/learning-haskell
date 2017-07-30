@@ -126,7 +126,7 @@ descrShiftedNum :: (Ord a, Num a) => a -> [Char]
 descrShiftedNum n
     | s < 0     = "Negative"
     | s == 0    = "Zero"
-    | otherwise = "Positive or..."
+    | otherwise = "Maybe positive?"
     where s = n - 7
 
 -- let <bindings> in <expression : very local bindings
