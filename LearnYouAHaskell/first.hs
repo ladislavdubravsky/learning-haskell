@@ -5,7 +5,7 @@
 --     :l C:\Haskell\LearnYouAHaskell\first.hs
 --     :r reload after source change
 -- compile:
---     ghc C:\Haskell\LearnYouAHaskell\first.hs
+--     ghc --make C:\Haskell\LearnYouAHaskell\first.hs
 -- TODO: look into Cabal
 
 main = putStrLn "Running first.hs. Load in ghci to test functions interactively."
