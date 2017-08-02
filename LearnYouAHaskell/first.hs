@@ -6,7 +6,7 @@
 --     :r reload after source change
 -- compile:
 --     ghc --make C:\Haskell\LearnYouAHaskell\first.hs
--- TODO: look into Cabal
+-- TODO: look into Cabal, Stack
 
 main = putStrLn "Running first.hs. Load in ghci to test functions interactively."
 
