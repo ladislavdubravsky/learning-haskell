@@ -2,9 +2,9 @@ import System.IO
 import Control.Monad
 import Data.List
 
-mindif :: (Ord a, Num a) => [a] -> a
-mindif []       = 999999
-mindif (_:[])   = 999999
+mindif :: (Bounded a, Ord a, Num a) => [a] -> a
+mindif []       = maxBound
+mindif (_:[])   = maxBound
 mindif (x:y:zs) = min (abs $ x - y) (mindif (y:zs))
 
 main = do
