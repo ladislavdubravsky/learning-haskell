@@ -4,6 +4,7 @@
 
 -- import x is Python's from x import *
 -- for import x as y use import qualified x as y
+-- import x (fun1, fun2) for only specific funs
 import Data.List
 import Data.Char
 import qualified Data.Map as Map
