@@ -1,2 +1,2 @@
 # learning-haskell
-Notes from learning Haskell.
+Notes and problem solutions from learning Haskell.
