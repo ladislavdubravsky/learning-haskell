@@ -1,6 +1,5 @@
 import System.IO
 import Control.Monad
-import qualified Data.Map.Strict as M
 import Data.List (sort)
 
 type Task = (Int,Int)
